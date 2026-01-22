@@ -56,6 +56,12 @@ img{
 
 }
 
+.section-content{
+    margin: 0 auto;
+    padding:  0 20px;
+    max-width: var(--site-max-width);
+}
+
 /* Navigation bar styling*/
 
 header .navbar{
@@ -66,11 +72,15 @@ header .navbar{
 }
 
 header {
+    position: fixed;
+    width: 100%;
+    z-index: 5;
     background: var(--primary-colour);
 }
 
 .navbar .nav-logo .logo-text{
     color: var(--white-colour);
+    font-size: var(--font-size-x1);
 }
 
 .navbar .nav-menu{
@@ -82,5 +92,237 @@ header {
     color: var(--white-colour);
     padding: 10px ;
     background: none;
+    font-size: var(--font-size-m);
+    transition: 0.3s ease;
+    border-radius: var(--border-radius-m);
 }
+
+.navbar .nav-menu .nav-link:hover{
+    color: var(--primary-colour);
+    background-color: var(--secondary-colour);
+}
+
+.navbar :where(#menu-close-button, #menu-open-button){
+    display: none;
+}
+
+.Hero-section{
+    min-height: 100vh;
+    background: var(--primary-colour);
+}
+
+.Hero-section .section-content{
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    color: var(--white-colour);
+    justify-content: space-between;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+
+.Hero-section .hero-details .title{
+    font-family: "Luckiest Guy",cursive;
+    font-weight:900;
+    font-style: normal;
+    font-size: 3rem;
+    color: var(--secondary-colour);
+}
+
+.Hero-section .hero-details .subtitle{
+    margin-top: 8px;
+    max-width: 100%;
+    font-size: var(--font-size-x1);
+    font-weight: var(--font-weight-semibold);
+    color: var(--white-colour);
+}
+
+.Hero-section .hero-details .description{
+    max-width: 100%;
+    margin: 28px 0 40px;
+    font-size: var(--font-size-m);
+    color: var(--white-colour);
+}
+.Hero-section .hero-details .buttons{
+    display: flex;
+    gap: 10px;
+}
+.Hero-section .hero-details .button{
+    display: flex;
+    padding: 10px 26px;
+    border: 2px solid transparent;
+    color: var(--primary-colour);
+    border-radius: var(--border-radius-m);
+    background: var(--secondary-colour);
+    font-weight: var(--font-weight-semibold);
+    transition: 0.3 ease;
+}
+
+.Hero-section .hero-details .button:hover{
+    color: var(--white-colour);
+    border-color: var(--white-colour);
+    background: transparent;
+}
+.Hero-section .hero-details .contact-us{
+    color: var(--white-colour);
+    border-color: var(--white-colour);
+    background: transparent;
+    font-weight: var(--font-size-m);
+}
+
+.Hero-section .hero-details .contact-us:hover{
+    color: var(--primary-colour);
+    background: var(--secondary-colour);
+    border-color: var(--secondary-colour);
+    font-weight: var(--font-weight-semibold);
+    
+}
+
+.Hero-section .hero-image-wrapper{
+    width: 80%;
+    margin-right: 30px;
+}
+
+.about-section{
+    max-height: 100%;
+    background: var(--gray-colour);
+}
+
+.about-section .section-content{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    min-height: 100vh;
+    justify-content: space-between;
+
+}
+
+.about-section .about-details .title{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:var(--font-weight-semibold);
+    font-style: normal;
+    font-size: 3rem;
+    color: var(--secondary-colour);
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.about-section .about-details .description{
+    max-width: 100%;
+    margin: 28px 0 40px;
+    font-size: var(--font-size-1);
+    color: var(--black-colour);
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.about-section .about-image-wrapper{
+    width: 100%;
+    min-width: 40%;
+    margin-right: 30px;
+}
+
+.about-section .about-details .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+}
+
+@media screen and (max-width:900px){
+    :root{
+            --font-size-s: 0.9rem;
+    --font-size-n: 1rem;
+    --font-size-m: 1.12rem;
+    --font-size-1: 1.5rem;
+    --font-size-x1: 2rem;
+    --font-size-xx1: 2.3rem;
+    }
+
+     .navbar :where(#menu-close-button, #menu-open-button){
+        font-size: var(--font-size-m);
+        display: block;
+     }
+
+     .navbar #menu-close-button{
+        position: absolute;
+        left: 70%;
+        top: 20px;
+        padding: 10px 25px 10px 10px;
+     }
+
+     .navbar #menu-close-button:hover{
+        color: #252525;
+        background: #f1a252;
+     }
+     
+     .navbar #menu-open-button{
+        color: var(--white-colour);
+     }
+
+     .navbar .nav-menu{
+        display: block;
+        position: fixed;
+        left: -300px;
+        top: 0;
+        width: 200px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top:100px;
+        background: var(--white-colour);
+        transition: left 0.4s ease;
+     }
+
+     body.shaw-mobile-menu .navbar .nav-menu{
+        left: 0;
+     }
+     .navbar .nav-menu .nav-link{
+        color: var(--black-colour);
+        font-size: var(--font-size-m);
+        margin-top: 10px;
+        display: block;
+     }
+
+    
+     .Hero-section .section-content{
+        gap: 50px;
+        margin-left: 20px;
+        padding: 30px 20px 20px;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+     }
+    .Hero-section .hero-details .buttons{
+        justify-content: center;
+    }
+    .Hero-section .hero-image-wrapper{
+        max-width: 60%;
+        margin-top: 30px;
+    }
+
+    .about-section .section-content{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        min-height: 100vh;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        gap: 20px;
+
+    }
+
+    .about-section .about-image-wrapper{
+    margin-top: 50px;
+    width: 60%;
+    margin-right: 30px;
+}
+
+
+    } 
 

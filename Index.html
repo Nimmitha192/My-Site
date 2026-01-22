@@ -2,36 +2,86 @@
 <html>
 <head>
     <title>Golden Crust Pizzeria</title>
+    <!--Linking font awsome for icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <nav class="navbar">
+        <nav class="navbar section-content">
             <a href="#" class="nav-logo">
-                <h2 class="logo-text">PizzA</h2>
+                <h2 class="logo-text">🍕PizzA </h2>
             </a>
             <ul class="nav-menu">
+                <button id="menu-close-button" class="fas fa-times"></button>
                 <li class="nav-item">
                     <a href="#" class="nav-link">Home</a>
                 </li>
-                                <li class="nav-item">
+                <li class="nav-item">
                     <a href="#" class="nav-link">About</a>
                 </li>
-                                <li class="nav-item">
+                <li class="nav-item">
                     <a href="#" class="nav-link">Menu</a>
                 </li>
-                                <li class="nav-item">
+                <li class="nav-item">
                     <a href="#" class="nav-link">Testimonials</a>
                 </li>
-                                <li class="nav-item">
+                <li class="nav-item">
                     <a href="#" class="nav-link">Gallery</a>
                 </li>
-                                <li class="nav-item">
+                <li class="nav-item">
                     <a href="#" class="nav-link">Contact</a>
                 </li>
             </ul>
-
+            <button id="menu-open-button" class="fas fa-bars"></button>
         </nav>
     </header>
+
+    <main>
+    <section class="Hero-section">
+        <div class="section-content">
+            <div class="hero-details">
+                <h2 class="title">Golden Crust Pizzeria</h2>
+                <h3 class="subtitle">Every slice tells a story <br>Make your day delicious with our PizzA </h3>
+                <p class="description">Welcome! Step in, relax, and enjoy the aroma of freshly baked pizza
+                     made just for you. From our oven to your table, every slice is crafted to bring comfort, flavor, and a smile to your day.</p>
+
+                <div class="buttons">
+                    <a href="#" class="button order-now">Order Now</a>
+                    <a href="#" class="button contact-us">Contact us</a>
+                </div>
+            </div>
+
+          
+            <div class="hero-image-wrapper">
+                <img src="4.png" alt="hero" class="hero-image"> 
+            </div>
+        </div>
+    </section>
+
+    <!-- About section-->
+     <section class="about-section">
+        <div class="section-content">
+            <div class="about-details">
+                <h1 class="title">ABOUT US</h1>
+                <p class="description"><b>Golden Crust Pizzeria</b> is located in <b>Hapugala, Galle, Sri Lanka</b>, and is dedicated to serving fresh, delicious, and high-quality pizzas. We use carefully selected ingredients, freshly prepared dough, and rich sauces to create great-tasting pizzas. Whether you dine in or take away, we focus on excellent flavor, friendly service, and customer satisfaction. We are proud to serve our local community with food made with passion and care. </p>
+            
+                <div class="logo">
+                    <a href="#" class="social-link"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+
+            <div class="about-image-wrapper">
+                <img src="3.png" alt="hero" class="hero-image"> 
+            </div>
+        </div>
+
+     </section>
+    </main>
+
+    <script src="script.js"></script>
 </body>
 </html>
