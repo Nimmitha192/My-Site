@@ -507,7 +507,7 @@ header {
 }
 
 
-@media screen and (max-width:1024px) {
+@media (max-width:1024px) {
 
     .menu-section .menu-list{
         gap: 60px;
@@ -523,7 +523,7 @@ header {
 
 }
 
-@media screen and (max-width:900px){
+@media (max-width:900px){
     :root{
     --font-size-s: 0.9rem;
     --font-size-n: 1rem;
@@ -654,7 +654,7 @@ header {
 
 } 
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
         .menu-section .menu-list{
         gap: 60px;
         margin: 0 20px;
