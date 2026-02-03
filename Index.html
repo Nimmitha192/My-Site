@@ -4,6 +4,8 @@
     <title>Golden Crust Pizzeria</title>
     <!--Linking font awsome for icons-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <!--linling swiper css-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -15,22 +17,22 @@
             <ul class="nav-menu">
                 <button id="menu-close-button" class="fas fa-times"></button>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Home</a>
+                    <a href="#home" class="nav-link">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">About</a>
+                    <a href="#about" class="nav-link">About</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Menu</a>
+                    <a href="#menu" class="nav-link">Menu</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Testimonials</a>
+                    <a href="#test" class="nav-link">Testimonials</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Gallery</a>
+                    <a href="#gallery" class="nav-link">Gallery</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Contact</a>
+                    <a href="#contact" class="nav-link">Contact</a>
                 </li>
             </ul>
             <button id="menu-open-button" class="fas fa-bars"></button>
@@ -38,7 +40,8 @@
     </header>
 
     <main>
-    <section class="Hero-section">
+    <!-- Hero Section -->
+    <section class="Hero-section" id="home">
         <div class="section-content">
             <div class="hero-details">
                 <h2 class="title">Golden Crust Pizzeria</h2>
@@ -59,11 +62,11 @@
         </div>
     </section>
 
-    <!-- About section-->
-     <section class="about-section">
+    <!-- About section -->
+     <section class="about-section" id="about">
         <div class="section-content">
             <div class="about-details">
-                <h1 class="title">ABOUT US</h1>
+                <h1 class="section-title">ABOUT US</h1>
                 <p class="description"><b>Golden Crust Pizzeria</b> is located in <b>Hapugala, Galle, Sri Lanka</b>, and is dedicated to serving fresh, delicious, and high-quality pizzas. We use carefully selected ingredients, freshly prepared dough, and rich sauces to create great-tasting pizzas. Whether you dine in or take away, we focus on excellent flavor, friendly service, and customer satisfaction. We are proud to serve our local community with food made with passion and care. </p>
             
                 <div class="logo">
@@ -75,12 +78,231 @@
             </div>
 
             <div class="about-image-wrapper">
-                <img src="3.png" alt="hero" class="hero-image"> 
+                <img src="3.png" alt="hero" class="about-image"> 
             </div>
         </div>
 
      </section>
+
+    <!-- Menu section -->
+     <section class="menu-section" id="menu">
+        <h2 class="section-title">OUR MENU</h2>
+        <div class="section-content">
+            <ul class="menu-list">
+                <li class="menu-items">
+                    <img src="5.png" alt="Cheesy Garlic Pizza" class="Menu-image">
+                    <h3 class="name">Cheesy Garlic Pizza</h3>
+                    <p class="text">Italian Pizza Dough, Original Italian Olive oil, Fresh Garlic, Mozzarella Cheese, Basil</p>
+                    <p class="price">Rs.890.00 - 1650.00</p>
+                </li>
+                <li class="menu-items">
+                    <img src="6.png" alt="Italian 4 Cheese Pizza" class="Menu-image">
+                    <h3 class="name">Italian 4 Cheese Pizza</h3>
+                    <p class="text">Italian Pizza Dough, Original Italian Tomato sauce, Mozzarella Cheese, Parmesan Cheese & Original Italian Blue Cheese</p>
+                    <p class="price">Rs.1750.00 - 3150.00</p>
+                </li>
+                <li class="menu-items">
+                    <img src="7.png" alt="Italian Anchovies Pizza" class="Menu-image">
+                    <h3 class="name">Italian Anchovies Pizza</h3>
+                    <p class="text">Italian Pizza Dough, Original Italian Olive oil, Fresh Garlic, Mozzarella Cheese, Basil</p>
+                    <p class="price">Rs.2150.00 - 3850.00</p>
+                </li>
+                <li class="menu-items">
+                    <img src="8.png" alt="Italian BBQ Chicken Pizza" class="Menu-image">
+                    <h3 class="name">Italian BBQ Chicken Pizza</h3>
+                    <p class="text">Italian Pizza Dough, Original Italian Tomato sauce, Mozzarella Cheese, BBQ Chicken, Onion, Kochchi Sausage, Capsicum, BBQ Sauce</p>
+                    <p class="price">Rs.1850.00 - 2950.00</p>
+                </li>
+                
+                <li class="menu-items">
+                    <img src="9.png" alt="Italian Prawn Pizza" class="Menu-image">
+                    <h3 class="name">Italian Prawn Pizza</h3>
+                    <p class="text">Italian Pizza Dough, Original Italian Tomato sauce, Italian Black Olives, Basil, Mozzarella Cheese & Prawns</p>
+                    <p class="price">Rs.2000.00 - 3250.00</p>
+                </li>
+                <li class="menu-items">
+                    <img src="10.png" alt="Italian Grilled Chicken Bacon Pizza" class="Menu-image">
+                    <h3 class="name">Italian Grilled Chicken Bacon Pizza</h3>
+                    <p class="text">Italian Pizza Dough, Original Tomato Sauce, Mozzarella Cheese, Chicken Bacon, Grilled Chicken, Mushroom</p>
+                    <p class="price">Rs.1150.00 - 2100.00</p>
+                </li>
+                <li class="menu-items">
+                    <img src="11.png" alt="Italian Seafood Pizza" class="Menu-image">
+                    <h3 class="name">Italian Seafood Pizza</h3>
+                    <p class="text">Italian Pizza Dough, Original Italian Tomato sauce, Mozzarella Cheese, Prawns, Squid, Claims, Original italian tonno</p>
+                    <p class="price">Rs.2100.00 - 3450.00</p>
+                </li>
+                <li class="menu-items">
+                    <img src="12.png" alt="Italian Tuna Pizza" class="Menu-image">
+                    <h3 class="name">Italian Tuna Pizza</h3>
+                    <p class="text">Italian Pizza Dough, Original Italian Tomato sauce, Mozzarella, Tuna Fish (Italian), Onions & Olive oil</p>
+                    <p class="price">Rs.1850.00 - 3250.00</p>
+                </li>
+                <li class="menu-items">
+                    <img src="13.png" alt="Italian Vegetarian Pizza" class="Menu-image">
+                    <h3 class="name">Italian Vegetarian Pizza</h3>
+                    <p class="text">Italian Pizza Dough, Original Italian Tomato sauce, Mozzarella Cheese, Mushroom, Bell pepper, Brinjal, Zucchini & Black olives</p>
+                    <p class="price">Rs.1190.00 - 2700.00</p>
+                </li>
+                <li class="menu-items">
+                    <img src="14.png" alt="Margherita Pizza" class="Menu-image">
+                    <h3 class="name">Margherita Pizza</h3>
+                    <p class="text">Italian Pizza Dough, Original Italian Tomato sauce, Mozzarella, Cheese, Basil</p>
+                    <p class="price">Rs.890.00 - 1950.00</p>
+                </li>
+            </ul>
+        </div>
+     </section>
+    
+     <!-- Test section -->
+    <section class="test-section" id="test">
+        <h2 class="section-title">TESTIMONIAL</h2>
+        <div class="section-content">
+            <div class="slider-container swiper">
+                <div class="slider-wrapper">
+                    <ul class="test-list swiper-wrapper">
+                        <li class="test swiper-slide">
+                            <img src="16.jpg" alt="User" class="user-image">
+                            <h3 class="name">Malsha Nethnuwan</h3>
+                            <i class="feedback">“Golden Crust Pizzeria has the best pizza in Galle. The crust is crispy and the toppings are very fresh. I will definitely come again with my family.”</i>
+                        </li>
+                        <li class="test swiper-slide">
+                            <img src="17.jpg" alt="User" class="user-image">
+                            <h3 class="name">Chethiya Kaushal</h3>
+                            <i class="feedback">“Loved the cheese pizza! It was hot, tasty, and perfectly cooked. The staff are friendly and the place is clean.”</i>
+                        </li>
+                        <li class="test swiper-slide">
+                            <img src="18.jpg" alt="User" class="user-image">
+                            <h3 class="name">Supasan Geeganage</h3>
+                            <i class="feedback">“I ordered pizza for takeaway and it was ready on time. The flavor was amazing and the price is reasonable. Highly recommended!”</i>
+                        </li>
+                        <li class="test swiper-slide">
+                            <img src="23.jpg" alt="User" class="user-image">
+                            <h3 class="name">Praveen Etipola</h3>
+                            <i class="feedback">“Best pizza spot in Hapugala. Soft inside, crispy outside, and full of flavor. My kids loved it!”</i>
+                        </li>
+                        <li class="test swiper-slide">
+                            <img src="20.jpg" alt="User" class="user-image">
+                            <h3 class="name">Manula Akalanka</h3>
+                            <i class="feedback">“Golden Crust Pizzeria never disappoints. Fresh ingredients, great taste, and excellent service every time.”</i>
+                        </li>
+                        <li class="test swiper-slide">
+                            <img src="21.jpg" alt="User" class="user-image">
+                            <h3 class="name">Bathiya Manoj</h3>
+                            <i class="feedback">“The pizza was very tasty and filling. You can really feel the quality of the ingredients. One of my favorite places now.”</i>
+                        </li>
+                        <li class="test swiper-slide">
+                            <img src="22.jpg" alt="User" class="user-image">
+                            <h3 class="name">Teshan chamuditha</h3>
+                            <i class="feedback">“I tried their chicken pizza and it was delicious. Not too oily and well balanced flavors.”</i>
+                        </li>
+                        <li class="test swiper-slide">
+                            <img src="19.jpg" alt="User" class="user-image">
+                            <h3 class="name">Ushan Chanuka</h3>
+                            <i class="feedback">““Clean place, good atmosphere, and amazing pizza. Everything was just right.”</i>
+                        </li>
+                    </ul>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallary Section-->
+     <section class="gallery-section" id="gallery">
+        <h2 class="section-title">GALLERY</h2>
+        <div class="section-content">
+            <ul class="gallery-list">
+                <li class="gallery-items">
+                    <img src="24.jpg" alt="gallery" class="gallery-image">
+                </li>
+                <li class="gallery-items">
+                    <img src="26.jpg" alt="gallery" class="gallery-image">
+                </li>
+                <li class="gallery-items">
+                    <img src="27.jpg" alt="gallery" class="gallery-image">
+                </li>
+                <li class="gallery-items">
+                    <img src="28.jpg" alt="gallery" class="gallery-image">
+                </li>
+                <li class="gallery-items">
+                    <img src="29.jpg" alt="gallery" class="gallery-image">
+                </li>
+                <li class="gallery-items">
+                    <img src="30.jpg" alt="gallery" class="gallery-image">
+                </li>
+ 
+            </ul>
+        </div>
+     </section>
+
+    <!--contact section-->
+    <section class="contact-section" id="contact">
+        <h2 class="section-title">CONTACT US</h2>
+        <div class="section-content">
+            <ul class="contact-info-list">
+                <li class="contact-info">
+                    <i class="fa-solid fa-pizza-slice logo"></i>
+                    <p>12/2, Hapugala, Galle, Sri Lanka</p>
+                </li>
+                <li class="contact-info">
+                    <i class="fa-regular fa-envelope"></i>
+                    <p>info@goldencrustpizzeriawebsite.com</p>
+                </li>
+                <li class="contact-info">
+                    <i class="fa-solid fa-phone"></i>
+                    <p>077 584 8450 / 077 541 5161</p>
+                </li>
+                <li class="contact-info">
+                    <i class="fa-regular fa-clock"></i>
+                    <p>Monday - Saturday : 8.00 AM - 10.00 PM</p>
+                </li>
+                <li class="contact-info">
+                    <i class="fa-solid fa-clock"></i>
+                    <p>Sunday : closed</p>
+                </li>
+                <li class="contact-info">
+                    <i class="fa-solid fa-globe"></i>
+                    <p>www.goldencrustpizzeria.com</p>
+                </li>
+            </ul>
+
+            <form action="#" class="contact-form">
+                <input type="text" placeholder="Enter your name" class="form-input" required>
+                <input type="email" placeholder="Enter your email" class="form-input" required>
+                <textarea type="text" placeholder="Enter your massage" class="form-input" required></textarea>
+                <button class="submit-button">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- footer section-->
+     <footer class="footer-section">
+
+        <div class="section-content">
+            <p class="copyright-text">2026 Golden Crust Pizzeria</p>
+
+            <div class="logo">
+                <a href="#" class="social-link"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" class="social-link"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#" class="social-link"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+
+            <p class="policy-text">
+                <a href="#" class="policy-link">Privacy Policy</a>
+                <span class="separator">.</span>
+                <a href="#" class="policy-link">Refund Policy</a>
+            </p>
+        </div>
+     </footer>
     </main>
+
+
+    <!--linking swiper script-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
 
     <script src="script.js"></script>
 </body>
